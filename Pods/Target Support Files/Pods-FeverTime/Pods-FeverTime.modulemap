@@ -1,0 +1,6 @@
+framework module Pods_FeverTime {
+  umbrella header "Pods-FeverTime-umbrella.h"
+
+  export *
+  module * { export * }
+}
