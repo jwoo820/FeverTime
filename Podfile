@@ -8,4 +8,5 @@ target 'FeverTime' do
   # Pods for FeverTime
   pod 'SnapKit', '~> 5.6.0'
   pod 'Kingfisher', '~> 7.0'
+  pod 'Charts' 
 end

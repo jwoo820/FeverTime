@@ -27,24 +27,40 @@
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Hkw-sH-atb">
+                                <rect key="frame" x="12" y="100" width="391" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="c8H-g7-mVd"/>
+                                </constraints>
+                                <locale key="locale" localeIdentifier="ko"/>
+                            </datePicker>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="we7-im-qqu" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="63" y="530" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hkw-sH-atb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="MfQ-ub-F7i"/>
+                            <constraint firstItem="Hkw-sH-atb" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="12" id="YhK-81-Wrn"/>
+                            <constraint firstItem="Hkw-sH-atb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="aC9-rX-nFJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FGf-he-D5w">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="dumbbell.png" id="fRy-b6-7IK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="FGf-he-D5w"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="190" y="102"/>
         </scene>
     </scenes>
     <resources>
-        <image name="dumbbell.png" width="409.60000610351562" height="409.60000610351562"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

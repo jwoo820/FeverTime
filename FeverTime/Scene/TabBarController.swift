@@ -19,22 +19,22 @@ class TabBarController: UITabBarController {
         return viewController
     }()
     
-    private lazy var dietViewController: UIViewController = {
-        let viewController = UINavigationController(rootViewController: DietViewController())
+    private lazy var exerciseViewController: UIViewController = {
+        let viewController = UINavigationController(rootViewController: ExerciseViewController())
         let tabBarItem = UITabBarItem(
-            title: "식단",
-            image: UIImage(named: "chef"),
+            title: "운동",
+            image: UIImage(named: "dumbbell"),
             tag: 1
         )
         viewController.tabBarItem = tabBarItem
         return viewController
     }()
     
-    private lazy var exerciseViewController: UIViewController = {
-        let viewController = UINavigationController(rootViewController: ExerciseViewController())
+    private lazy var dietViewController: UIViewController = {
+        let viewController = UINavigationController(rootViewController: DietViewController())
         let tabBarItem = UITabBarItem(
-            title: "운동",
-            image: UIImage(named: "dumbbell"),
+            title: "식단",
+            image: UIImage(named: "chef"),
             tag: 2
         )
         viewController.tabBarItem = tabBarItem
